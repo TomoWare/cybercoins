@@ -10,16 +10,26 @@
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <style>
   body{
-    background-color: linear-gradient(pink, skyBlue);
+    height: 200px;
+    background-color: skyBlue; /* For browsers that do not support gradients */
+    background-color: -webkit-linear-gradient(pink, skyBlue); /* For Safari 5.1 to 6.0 */
+    background-color: -o-linear-gradient(pink, skyBlue); /* For Opera 11.1 to 12.0 */
+    background-color: -moz-linear-gradient(pink, skyBlue); /* For Firefox 3.6 to 15 */
+    background-color: linear-gradient(pink, skyBlue); /* Standard syntax (must be last) */
   }
   </style>
 </html>
 <body>
-  <div data-role="page" id="pageone">
+  <div data-role="page" id="home">
     <div data-role="header">
       <h1>CyberCoins</h1>
       <h3>A Currency Used for Buying Files.</h3>
-      <a href="#pagetwo" data-transition="fade">About CyberCoins</a>
-  </div>
+      <a href="#about" data-transition="fade">About CyberCoins</a>
+      </div>
     </div>
+  <div data-role="page" id="about">
+    <div data-role="header">
+      <h1>About CyberCoins</h1>
+    </div>
+  </div>
 </body>
